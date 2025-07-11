@@ -99,7 +99,7 @@ body {
   aspect-ratio: 16 / 9;
   width: 100%;
   border-radius: 15px;
-  overflow: hidden; /* <- ESSENCIAL */
+  overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -114,37 +114,10 @@ body {
   margin-bottom: 2rem;
 }
 
-/*
-.iphone-frame {
-  position: relative;
-}
-
-.iphone-frame iframe {
-  position: absolute;
-  top: 25%;  ajuste vertical da tela do iPhone 
-  left: 23%;  ajuste horizontal da tela do iPhone 
-  width: 38%;
-  height: 49%;
-  z-index: 1;
-}
-
-.iphone-video-wrapper {
-  position: absolute;
-  width: 450px;
-  max-width: 100%;
-  margin: 0 auto 2rem;
-}
-
-.iphone-video iframe {
-  width: 100%;
-  height: 100%;
-}
-*/
-
 /* Footer */
 
 footer {
-  background-color: var(--marrom-claro);
+  background-image: url("./assets/imagens/footer-bg.png");
 }
 
 footer a {
@@ -152,7 +125,7 @@ footer a {
 }
 
 section a i:hover {
-  color: var(--roxo-escuro);
+  color: var(--azul-escuro);
 }
 
 /* Contato */
@@ -231,7 +204,7 @@ ul li a.btn:hover {
 
 @media (min-width: 992px) {
   .texto-grande-desktop {
-    font-size: 1.25rem; /* ou maior, ex: 1.5rem */
+    font-size: 1.25rem;
   }
 }
 
