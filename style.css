@@ -60,9 +60,8 @@ body {
 
 /* Doação */
 .doacao-container {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
+  padding: 3rem 0;
+  border-radius: 1rem;
 }
 
 .doacao-container .doacao-texto {
@@ -188,25 +187,10 @@ ul li a.btn:hover {
   transform: rotate(-45deg) translateY(-9px);
 }
 
-/* imagens página bolos */
-
-.img-hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.img-hover:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+/* Media query */
 
 @media (min-width: 992px) {
   .texto-grande-desktop {
     font-size: 1.25rem; /* ou maior, ex: 1.5rem */
-  }
-}
-
-@media (max-width: 590px) {
-  .doacao-container {
-    flex-direction: column;
-    align-items: center;
   }
 }
