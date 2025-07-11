@@ -13,8 +13,8 @@ body {
   color: #000000;
   background: linear-gradient(
     to right,
-    rgba(128, 0, 128, 0.09),
-    rgba(128, 0, 128, 0.01)
+    rgba(0, 53, 128, 0.09),
+    rgba(0, 17, 128, 0.01)
   );
 }
 
@@ -133,8 +133,8 @@ ul li a.btn:hover {
   display: inline-block;
   padding: 0.3rem 0.75rem;
   background-color: #f8f9fa;
-  color: var(--roxo-escuro);
-  border: 1px solid var(--roxo-escuro);
+  color: var(--azul-escuro);
+  border: 1px solid var(--azul-escuro);
   border-radius: 0.25rem;
   font-weight: bold;
   text-align: center;
@@ -142,7 +142,7 @@ ul li a.btn:hover {
 }
 
 .saiba-mais-botao:hover {
-  background-color: var(--roxo-escuro);
+  background-color: var(--azul-escuro);
   color: white;
 }
 
@@ -201,5 +201,12 @@ ul li a.btn:hover {
 @media (min-width: 992px) {
   .texto-grande-desktop {
     font-size: 1.25rem; /* ou maior, ex: 1.5rem */
+  }
+}
+
+@media (max-width: 590px) {
+  .doacao-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
