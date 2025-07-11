@@ -118,6 +118,9 @@ body {
 
 footer {
   background-image: url("./assets/imagens/footer-bg.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
 }
 
 footer a {
@@ -214,5 +217,24 @@ ul li a.btn:hover {
   }
   .video-col:last-child {
     padding-left: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  footer section.container .row {
+    justify-content: center !important;
+  }
+  footer section.container .row > div {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    display: block;
+  }
+
+  footer section.container .d-flex.align-items-start.gap-3,
+  footer section.container .d-flex.align-items-center.gap-3,
+  footer section.container .d-flex.align-items-center.gap-2 {
+    justify-content: flex-start !important;
   }
 }
