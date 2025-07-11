@@ -1,0 +1,183 @@
+/* Variáveis */
+:root {
+  --bege: #e6e0d6;
+  --marrom-escuro: #816d4f;
+  --marrom-claro: rgb(226, 199, 171);
+  --roxo-escuro: #800080;
+  --font-titulo: "Great Vibes", cursive;
+}
+
+/* Reset e base */
+
+body {
+  font-family: "Barlow", sans-serif;
+  color: #000000;
+  background: linear-gradient(
+    to right,
+    rgba(128, 0, 128, 0.09),
+    rgba(128, 0, 128, 0.01)
+  );
+}
+
+/* Header e navbar */
+
+.navbar-color {
+  background-color: var(--marrom-claro) !important;
+}
+
+.nav-item .nav-link {
+  transition: 0.3s ease;
+}
+
+.navbar-color .nav-link,
+.navbar-color .navbar-brand,
+.navbar-color .offcanvas-title {
+  color: #000000 !important;
+}
+
+.nav-link:hover {
+  color: var(--roxo-escuro) !important;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.navbar-brand img {
+  height: 60px;
+  width: auto;
+}
+
+.font-titulo {
+  font-family: var(--font-titulo);
+  color: var(--roxo-escuro);
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Cards */
+
+.clickable-card {
+  margin-bottom: 1.5rem;
+}
+
+.card[data-bs-toggle="modal"] {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card[data-bs-toggle="modal"]:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.precos {
+  color: var(--roxo-escuro);
+}
+
+.rende {
+  color: #000000;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--marrom-claro);
+}
+
+footer a {
+  text-decoration: none;
+}
+
+section a i:hover {
+  color: var(--roxo-escuro);
+}
+
+/* Contato */
+
+ul li a.btn {
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+ul li a.btn:hover {
+  color: var(--roxo-escuro) !important;
+}
+
+/* Saiba mais */
+
+.saiba-mais-botao {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  background-color: #f8f9fa;
+  color: var(--roxo-escuro);
+  border: 1px solid var(--roxo-escuro);
+  border-radius: 0.25rem;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.saiba-mais-botao:hover {
+  background-color: var(--roxo-escuro);
+  color: white;
+}
+
+/* Botão hamburger */
+
+.custom-toggler {
+  border: none;
+  padding: 0.25rem;
+  position: relative;
+  z-index: 1031;
+}
+
+.toggler-icon {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin: 5px auto;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+.custom-toggler.collapsed .top-bar {
+  transform: rotate(0deg) translateY(0);
+}
+
+.custom-toggler:not(.collapsed) .top-bar {
+  transform: rotate(45deg) translateY(9px);
+}
+
+.custom-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.custom-toggler:not(.collapsed) .middle-bar {
+  opacity: 0;
+}
+
+.custom-toggler.collapsed .bottom-bar {
+  transform: rotate(0deg) translateY(0);
+}
+
+.custom-toggler:not(.collapsed) .bottom-bar {
+  transform: rotate(-45deg) translateY(-9px);
+}
+
+/* imagens página bolos */
+
+.img-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.img-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 992px) {
+  .texto-grande-desktop {
+    font-size: 1.25rem; /* ou maior, ex: 1.5rem */
+  }
+}
