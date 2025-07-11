@@ -1,16 +1,15 @@
 /* Variáveis */
 :root {
-  --bege: #e6e0d6;
-  --marrom-escuro: #816d4f;
-  --marrom-claro: rgb(226, 199, 171);
-  --roxo-escuro: #800080;
-  --font-titulo: "Great Vibes", cursive;
+  --azul: #b6d8ed;
+  --azul-claro: #f2f9ff;
+  --azul-escuro: #1f5bcb;
+  --font-titulo: "Open Sans", sans-serif;
 }
 
 /* Reset e base */
 
 body {
-  font-family: "Barlow", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #000000;
   background: linear-gradient(
     to right,
@@ -22,10 +21,12 @@ body {
 /* Header e navbar */
 
 .navbar-color {
-  background-color: var(--marrom-claro) !important;
+  background-color: var(--azul-claro) !important;
 }
 
 .nav-item .nav-link {
+  background-color: transparent;
+  border-radius: 15px;
   transition: 0.3s ease;
 }
 
@@ -36,9 +37,10 @@ body {
 }
 
 .nav-link:hover {
-  color: var(--roxo-escuro) !important;
+  color: #ffffff !important;
   font-weight: bold;
-  text-decoration: underline;
+  background-color: var(--azul-escuro);
+  border-radius: 15px;
 }
 
 .navbar-brand img {
@@ -48,12 +50,32 @@ body {
 
 .font-titulo {
   font-family: var(--font-titulo);
-  color: var(--roxo-escuro);
+  color: var(--azul-escuro);
 }
 
 .navbar-toggler:focus {
   outline: none;
   box-shadow: none;
+}
+
+/* Doação */
+.doacao-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.doacao-container .doacao-texto {
+  max-width: 500px;
+}
+
+.doacao-container .doacao-texto a {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: var(--azul-escuro);
+  padding: 0.2rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 /* Cards */
