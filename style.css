@@ -246,9 +246,17 @@ ul li a.btn:hover {
     display: block;
   }
 
+  footer section.container h4 {
+    text-align: center;
+  }
+
+  .redes-sociais {
+    justify-content: center !important;
+  }
+
   footer section.container .d-flex.align-items-start.gap-3,
   footer section.container .d-flex.align-items-center.gap-3,
   footer section.container .d-flex.align-items-center.gap-2 {
-    justify-content: flex-start !important;
+    justify-content: center !important;
   }
 }
