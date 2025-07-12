@@ -114,6 +114,11 @@ body {
   margin-bottom: 2rem;
 }
 
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Voluntario */
 
 .texto-voluntario {

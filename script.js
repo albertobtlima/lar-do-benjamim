@@ -23,6 +23,21 @@ document.querySelectorAll("[data-include]").forEach(async (el) => {
     });
   });
 
+  // Reiniciar vídeos em todos os modais de vídeo
+  const modaisVideo = el.querySelectorAll(".modal[id^='modal-video-']");
+  modaisVideo.forEach((modal) => {
+    const iframe = modal.querySelector("iframe");
+    const originalSrc = iframe?.src || "";
+
+    modal.addEventListener("hidden.bs.modal", () => {
+      iframe.src = "";
+    });
+
+    modal.addEventListener("show.bs.modal", () => {
+      iframe.src = originalSrc;
+    });
+  });
+
   // <h1> Na home
   if (isHomePage()) {
     const logo = el.querySelector("#site-logo");
