@@ -245,18 +245,19 @@ ul li a.btn:hover {
     text-align: left;
     display: block;
   }
-
   footer section.container h4 {
     text-align: center;
   }
-
-  .redes-sociais {
-    justify-content: center !important;
-  }
-
   footer section.container .d-flex.align-items-start.gap-3,
   footer section.container .d-flex.align-items-center.gap-3,
   footer section.container .d-flex.align-items-center.gap-2 {
     justify-content: center !important;
+  }
+  .redes-sociais {
+    justify-content: center !important;
+  }
+  .navbar-brand img {
+    height: 50px;
+    width: auto;
   }
 }
