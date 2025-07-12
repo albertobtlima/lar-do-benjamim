@@ -131,10 +131,10 @@ body {
 /* Footer */
 
 footer {
-  background-image: url("./assets/imagens/footer-bg.png");
+  background-image: url("./assets/imagens/footer-bg-2.png");
   background-repeat: no-repeat;
-  background-position: center bottom;
   background-size: cover;
+  /* background-position: center bottom; */
 }
 
 footer a {
