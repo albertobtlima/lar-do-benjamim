@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lar do Benjamim</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header data-include="../partials/header.html"></header>
+    <section
+      data-include="../partials/banners.html"
+      aria-label="Banners rotativos"
+    ></section>
+
+    <!-- Conteúdo do voluntário Diogo -->
+    <main>
+      <section class="container mt-5">
+        <h1 class="text-center fs-4 my-4">
+          💛 Ser voluntário é transformar vidas — inclusive a sua.
+        </h1>
+        <div class="row mt-5">
+          <div class="col-12 col-md-2">
+            <img src="../assets/imagens/img-voluntario-1.png" alt="Quebra-cabeças colorido" />
+          </div>
+          <div class="col-12 col-md-10 w-75">
+            <p>
+              No Lar do Benjamim, cada sorriso, cada conquista e cada passo das
+              nossas crianças autistas tem por trás o carinho e a dedicação de
+              alguém que decidiu doar seu tempo para fazer a diferença.
+            </p>
+            <p>
+              Somos uma ONG mantida 100% por voluntários. Isso significa
+              que tudo que realizamos só é possível graças a pessoas como você,
+              que oferecem seu tempo, talentos e afeto para apoiar nossa missão.
+            </p>
+          </div>
+        </div>
+        <div class="row mt-5 p-5">
+          <div class="col-12 col-md-6">
+            <h5>‍🙋‍♀️ Como você pode ajudar:</h5>
+            <p>
+              Tem espaço para todo tipo de ajuda por aqui! Algumas formas de
+              voluntariado:
+            </p>
+            <ul>
+              <li>
+                Apoio nas atividades com as crianças (brincadeiras, oficinas,
+                leitura, arte)
+              </li>
+              <li>Organização de eventos e campanhas</li>
+              <li>Comunicação e redes sociais</li>
+              <li>Apoio administrativo</li>
+              <li>Manutenção do espaço</li>
+              <li>Captação de recursos e parcerias</li>
+            </ul>
+            <p class="mb-5">
+              Mesmo que você tenha poucas horas por semana ou apenas uma
+              habilidade específica, sua colaboração é muito bem-vinda.
+            </p>
+            <h5>🤗 Por que ser voluntário no Lar do Benjamim?</h5>
+            <ul>
+              <li>Porque você vai fazer parte de algo maior.</li>
+              <li>
+                Porque vai ajudar crianças incríveis a se desenvolverem com
+                afeto e inclusão.
+              </li>
+              <li>
+                Porque seu gesto simples pode mudar o dia — ou a vida — de
+                alguém.
+              </li>
+            </ul>
+            <p class="mb-5">E o mais bonito: você também vai se transformar.</p>
+            <h5>📝 Quer ser voluntário?</h5>
+            <p class="w-75">
+              Preencha o formulário ou entre em contato pelo <b>WhatsApp</b>
+              para saber como participar. Nossa equipe vai te orientar
+              direitinho sobre as possibilidades, dias e horários.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <form action="" class="bg-voluntario p-5">
+              <h5 class="w-100 text-center text-nowrap mb-4">
+                Formulário de Voluntariado
+              </h5>
+              <input
+                type="text"
+                class="form-control input-voluntario"
+                placeholder="Nome *"
+                required
+              />
+              <input
+                type="text"
+                class="form-control input-voluntario"
+                placeholder="Telefone *"
+                required
+              />
+              <input
+                type="text"
+                class="form-control input-voluntario"
+                placeholder="E-mail *"
+                required
+              />
+              <select class="form-select mb-3 rounded-pill">
+                <option selected disabled>Gênero</option>
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+                <option value="outro">Outro</option>
+              </select>
+              <label for="disponibilidade">Disponibilidade:</label>
+              <select id="periodo" class="form-select mb-3 rounded-pill">
+                <option selected disabled>Período do dia</option>
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+                <option value="integral">Integral</option>
+              </select>
+
+              <select id="dias" class="form-select mb-3 rounded-pill">
+                <option selected disabled>Dias da semana</option>
+                <option value="semana">Segunda a sexta</option>
+                <option value="fds">Fins de semana</option>
+                <option value="todos">Todos os dias</option>
+              </select>
+              <label for="como-gostaria-de-ajudar">
+                Como você gostaria de ajudar?*
+              </label>
+              <textarea
+                class="form-control"
+                placeholder="Digite aqui..."
+                style="height: 100px; resize: none"
+                required
+              ></textarea>
+              <button type="submit" class="btn-voluntario mx-auto d-block">
+                Enviar
+              </button>
+            </form>
+          </div>
+          <div class="col-md-2 align-self-end mb-5">
+            <img src="../assets/imagens/img-voluntario-1.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer data-include="../partials/footer.html"></footer>
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../script.js"></script>
+  </body>
+</html>
