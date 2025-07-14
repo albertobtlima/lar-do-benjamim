@@ -58,6 +58,11 @@ body {
   box-shadow: none;
 }
 
+.navbar-nav .nav-item__doador {
+  background-color: #ffeb5b;
+  border-radius: 15px;
+}
+
 /* Doação */
 
 .doacao-container .doacao-texto {
