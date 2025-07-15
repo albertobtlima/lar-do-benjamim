@@ -273,3 +273,31 @@ ul li a.btn:hover {
     width: auto;
   }
 }
+
+@media (max-width: 991.98px) {
+  .navbar-nav .nav-link {
+    display: inline-block;
+    width: auto;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .nav-link:hover {
+    background-color: var(--azul-escuro);
+    border-radius: 15px;
+    color: #fff !important;
+  }
+
+  .navbar-nav .nav-item__doador {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-nav .nav-item__doador .nav-link {
+    display: inline-block;
+    width: auto;
+
+    text-align: center;
+  }
+}
