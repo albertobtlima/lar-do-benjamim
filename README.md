@@ -20,33 +20,36 @@ A proposta visual busca transmitir acolhimento, leveza e confiança.
 - **Bootstrap 5.3**
 - **Bootstrap Icons**
 - **Google Fonts**
-- **JavaScript (modular e leve)**
+- **JavaScript**
 - **Vercel** (deploy)
 
-## 📁 Estrutura do Projeto
+## 🗂 Estrutura do Projeto
 
+```
+lar-do-benjamim/
 ├── index.html
 ├── pages/
-│ ├── sobre.html
-│ ├── doador.html
-│ ├── contato.html
-│ └── voluntario-2.html
+│   ├── sobre.html
+│   ├── doador.html
+│   ├── contato.html
+│   └── voluntario.html
 ├── partials/
-│ ├── banners.html
-│ ├── depoimentos.html
-│ ├── doacao.html
-│ ├── footer.html
-│ ├── header.html
-│ ├── modal-servicos.html
-│ ├── modal-videos.html
-│ ├── servicos.html
-│ └── voluntario.html
+│   ├── banners.html
+│   ├── depoimentos.html
+│   ├── doacao.html
+│   ├── footer.html
+│   ├── header.html
+│   ├── modal-servicos.html
+│   ├── modal-videos.html
+│   ├── servicos.html
+│   └── voluntario.html
 ├── assets/
-│ ├── imagens/
-│ └── banners/
+│   ├── imagens/
+│   └── banners/
 ├── style.css
 ├── script.js
 └── README.md
+```
 
 ## 🔍 Funcionalidades
 
