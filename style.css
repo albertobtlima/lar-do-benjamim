@@ -130,6 +130,11 @@ body {
   height: auto;
 }
 
+.card-videos {
+  background-color: transparent !important;
+  border: none;
+}
+
 /* Voluntario */
 
 .texto-voluntario {
