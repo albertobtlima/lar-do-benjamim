@@ -2,7 +2,7 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open("lar-benjamim-cache-v1").then((cache) => {
       return cache.addAll([
-        "/", // Página inicial
+        "/",
         "/index.html",
         "/style.css",
         "/script.js",
