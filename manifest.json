@@ -5,6 +5,7 @@
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#008080",
+  "orientation": "portrait-primary",
   "description": "Site oficial do Instituto Lar do Benjamim",
   "icons": [
     {
