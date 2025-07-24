@@ -74,3 +74,17 @@ window.addEventListener("load", () => {
     scrollToHash();
   }
 });
+
+// Cookies
+function aceitarCookies() {
+  localStorage.setItem("cookies-aceitos", "true");
+  const consent = document.getElementById("cookieConsent");
+  if (consent) consent.style.display = "none";
+}
+
+window.addEventListener("load", () => {
+  if (!localStorage.getItem("cookies-aceitos")) {
+    const consent = document.getElementById("cookieConsent");
+    if (consent) consent.style.display = "block";
+  }
+});
