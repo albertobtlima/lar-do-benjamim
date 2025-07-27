@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
+    <title>Lar do Benjamim</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header data-include="../partials/header.html"></header>
+
+    <!-- Banner -->
+    <img
+      class="img-fluid d-md-none w-100"
+      src="../assets/banners/b-sobre-mobi.jpg"
+      alt="Banner mobile"
+    />
+    <img
+      class="img-fluid d-none d-md-block d-xl-none w-100"
+      src="../assets/banners/b-sobre-tabl.jpg"
+      alt="Banner tablet"
+    />
+    <img
+      class="img-fluid d-none d-xl-block w-100"
+      src="../assets/banners/b-equipe-desk.png"
+      alt="Banner desktop"
+    />
+
+    <!-- Conteúdo principal -->
+    <main>
+      <section class="py-3">
+        <div class="container">
+          <h2 class="text-center font-titulo fs-3 fw-bold mb-4">Nosso time</h2>
+
+          <div class="text-center">
+            <p>
+              Este projeto nasceu a partir das diretrizes do MEC sobre a
+              curricularização da extensão, sendo desenvolvido por alunos dos
+              cursos de <strong>Engenharia de Software</strong> e
+              <strong>Análise e Desenvolvimento de Sistemas</strong> da
+              UNIASSELVI. Realizamos todo o trabalho de forma online, sob a
+              orientação do tutor Júlio Moura, com estudantes localizados em
+              polos do Ceará, Bahia, São Paulo, Santa Catarina, Pará e Mato
+              Grosso.
+            </p>
+            <p>
+              Unindo tecnologia, empatia e vontade de transformar, essa equipe
+              dedicou tempo, talento e sensibilidade ao
+              <strong>Lar do Benjamim</strong>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cards equipe -->
+      <section data-include="../partials/cards-equipe.html"></section>
+    </main>
+
+    <!-- Footer -->
+    <footer data-include="../partials/footer.html"></footer>
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../script.js"></script>
+  </body>
+</html>
