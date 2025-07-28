@@ -14,16 +14,20 @@ const urlsToCache = [
   "/assets/imagens/logo-uni.png",
 
   // Partials HTML
-  "/partials/header.html",
-  "/partials/banners.html",
-  "/partials/doacao.html",
-  "/partials/cards-servicos.html",
+  "/partials/cards-contatos.html",
   "/partials/cards-depoimentos.html",
-  "/partials/voluntario.html",
+  "/partials/cards-doador.html",
+  "/partials/cards-equipe.html",
+  "/partials/cards-redes.html",
+  "/partials/cards-servicos.html",
+  "/partials/carrossel.html",
+  "/partials/doacao.html",
   "/partials/footer.html",
+  "/partials/header.html",
   "/partials/modal-doador.html",
   "/partials/modal-servicos.html",
   "/partials/modal-videos.html",
+  "/partials/voluntario.html",
 
   // Externos
   "https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css",
