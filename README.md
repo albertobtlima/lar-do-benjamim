@@ -21,6 +21,7 @@ A proposta visual busca transmitir acolhimento, leveza e confiança.
 - **Bootstrap Icons**
 - **Google Fonts**
 - **JavaScript**
+- **PWA** (Progressive Web App)
 - **Vercel** (deploy)
 
 ## Estrutura do Projeto
@@ -69,6 +70,16 @@ lar-do-benjamim/
 - **Cards animados com hover**
 - **Formas de contato via WhatsApp, e-mail e telefone**
 - **Design acessível e compatível com dispositivos móveis**
+- **Suporte a PWA: instalação no dispositivo, modo offline e ícone personalizado**
+
+## Progressive Web App (PWA)
+
+O site está configurado como um PWA, oferecendo:
+
+- **Instalação em dispositivos móveis e desktops**
+- **Modo offline com cache de recursos essenciais**
+- **Arquivo manifest.json com ícones e tema personalizados**
+- **Service Worker com cache dinâmico**
 
 ## Informações Importantes
 
