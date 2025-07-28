@@ -12,7 +12,6 @@ const urlsToCache = [
   "/assets/icons/icon-512.png",
   "/assets/imagens/img-lar-benjamim.png",
   "/assets/imagens/logo-uni.png",
-  "/assets/imagens/favicon.png",
 
   // Partials HTML
   "/partials/header.html",
@@ -22,6 +21,7 @@ const urlsToCache = [
   "/partials/cards-depoimentos.html",
   "/partials/voluntario.html",
   "/partials/footer.html",
+  "/partials/modal-doador.html",
   "/partials/modal-servicos.html",
   "/partials/modal-videos.html",
 
