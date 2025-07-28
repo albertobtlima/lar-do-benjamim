@@ -29,28 +29,34 @@ A proposta visual busca transmitir acolhimento, leveza e confiança.
 lar-do-benjamim/
 ├── index.html
 ├── pages/
-│   ├── sobre.html
-│   ├── doador.html
 │   ├── contato.html
-│   └── voluntario.html
+│   ├── doador.html
+│   ├── equipe.html
+│   └── sobre.html
 ├── partials/
-│   ├── banners.html
 │   ├── cards-contatos.html
 │   ├── cards-depoimentos.html
-│   ├── cards-doacao.html
+│   ├── cards-doador.html
+│   ├── cards-equipe.html
 │   ├── cards-redes.html
 │   ├── cards-servicos.html
+│   ├── carrossel.html
 │   ├── doacao.html
 │   ├── footer.html
 │   ├── header.html
-│   ├── modal-doacao.html
+│   ├── modal-doador.html
 │   ├── modal-servicos.html
 │   ├── modal-videos.html
 │   └── voluntario.html
 ├── assets/
+│   ├── banners/
+│   ├── carrossel/
+│   ├── icons/
 │   ├── imagens/
-│   └── banners/
+│   └── favicon.png
 ├── style.css
+├── manifest.json
+├── service-worker.js
 ├── script.js
 └── README.md
 ```
@@ -71,4 +77,4 @@ imagens e informações estão alinhados com a proposta da ONG Lar do Benjamim.
 
 ---
 
-Feito com carinho por alunos da UNIASSELVI (Centro Universitário Leonardo da Vinci). 💛
+Feito com carinho e empenho por Alberto Lima (Centro Universitário Leonardo da Vinci). 💛
