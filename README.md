@@ -53,8 +53,7 @@ lar-do-benjamim/
 │   ├── banners/
 │   ├── carrossel/
 │   ├── icons/
-│   ├── imagens/
-│   └── favicon.png
+│   └── imagens/
 ├── style.css
 ├── manifest.json
 ├── service-worker.js
