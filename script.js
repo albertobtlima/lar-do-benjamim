@@ -91,10 +91,40 @@ window.addEventListener("load", () => {
 
 // PWA
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker
-    .register("/service-worker.js")
-    .then(() => console.log("Service Worker registrado com sucesso."))
-    .catch((error) =>
-      console.log("Erro ao registrar o Service Worker:", error)
-    );
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/service-worker.js")
+      .then((registration) => {
+        console.log("Service Worker registrado com sucesso");
+
+        // Se já houver um esperando, força a ativação
+        if (registration.waiting) {
+          registration.waiting.postMessage({ type: "SKIP_WAITING" });
+        }
+
+        registration.addEventListener("updatefound", () => {
+          const newSW = registration.installing;
+          newSW.addEventListener("statechange", () => {
+            if (
+              newSW.state === "installed" &&
+              navigator.serviceWorker.controller
+            ) {
+              console.log("Nova versão do SW instalada. Atualizando...");
+              newSW.postMessage({ type: "SKIP_WAITING" });
+            }
+          });
+        });
+
+        // Quando novo SW ativar, força o reload
+        let refreshing;
+        navigator.serviceWorker.addEventListener("controllerchange", () => {
+          if (refreshing) return;
+          refreshing = true;
+          window.location.reload();
+        });
+      })
+      .catch((err) => {
+        console.error("Erro ao registrar o SW:", err);
+      });
+  });
 }

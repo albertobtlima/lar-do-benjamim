@@ -1,4 +1,4 @@
-const CACHE_NAME = "lar-benjamim-v1";
+const CACHE_NAME = "lar-benjamim-v2";
 
 const urlsToCache = [
   "/",
@@ -36,7 +36,9 @@ const urlsToCache = [
   "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap",
 ];
 
+// INSTALAÇÃO
 self.addEventListener("install", (event) => {
+  self.skipWaiting(); // força o SW a ativar imediatamente
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll(urlsToCache);
@@ -44,14 +46,7 @@ self.addEventListener("install", (event) => {
   );
 });
 
-self.addEventListener("fetch", (event) => {
-  event.respondWith(
-    caches.match(event.request).then((response) => {
-      return response || fetch(event.request);
-    })
-  );
-});
-
+// ATIVAÇÃO
 self.addEventListener("activate", (event) => {
   const cacheAllowlist = [CACHE_NAME];
   event.waitUntil(
@@ -65,4 +60,30 @@ self.addEventListener("activate", (event) => {
       )
     )
   );
+  return self.clients.claim(); // Assume controle das abas abertas
+});
+
+// FETCH COM CACHE FIRST + ATUALIZAÇÃO EM BACKGROUND
+self.addEventListener("fetch", (event) => {
+  event.respondWith(
+    caches.match(event.request).then((response) => {
+      const fetchPromise = fetch(event.request)
+        .then((networkResponse) => {
+          return caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request, networkResponse.clone());
+            return networkResponse;
+          });
+        })
+        .catch(() => response); // fallback se offline
+
+      return response || fetchPromise;
+    })
+  );
+});
+
+// ESCUTA MENSAGEM DO CLIENTE (para skipWaiting)
+self.addEventListener("message", (event) => {
+  if (event.data && event.data.type === "SKIP_WAITING") {
+    self.skipWaiting();
+  }
 });
