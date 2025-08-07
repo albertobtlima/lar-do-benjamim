@@ -87,4 +87,4 @@ imagens e informações estão alinhados com a proposta da ONG Lar do Benjamim.
 
 ---
 
-Feito com carinho e empenho por alunos da Uniasselvi (Centro Universitário Leonardo da Vinci). 💛
+Feito com carinho e empenho por alunos da Uniasselvi(Centro Universitário Leonardo da Vinci). 💛
