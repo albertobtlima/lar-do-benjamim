@@ -100,3 +100,17 @@ if ("serviceWorker" in navigator) {
     .then((reg) => console.log("Service Worker registrado!", reg))
     .catch((err) => console.error("Erro ao registrar SW:", err));
 }
+
+// Chave pix
+function copiarPix() {
+  const chavePix = "55.943.412/0001-57"; // sua chave fixa
+
+  navigator.clipboard
+    .writeText(chavePix)
+    .then(() => {
+      alert("Chave PIX copiada para a área de transferência!");
+    })
+    .catch((err) => {
+      console.error("Erro ao copiar PIX: ", err);
+    });
+}
