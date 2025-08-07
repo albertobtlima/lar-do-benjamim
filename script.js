@@ -29,14 +29,18 @@ document.querySelectorAll("[data-include]").forEach(async (el) => {
     const modaisVideo = el.querySelectorAll(".modal[id^='modal-video-']");
     modaisVideo.forEach((modal) => {
       const iframe = modal.querySelector("iframe");
-      const originalSrc = iframe?.src || "";
-
-      modal.addEventListener("hidden.bs.modal", () => {
-        iframe.src = "";
-      });
+      const dataSrc = iframe?.getAttribute("data-src");
 
       modal.addEventListener("show.bs.modal", () => {
-        iframe.src = originalSrc;
+        if (iframe && dataSrc) {
+          iframe.setAttribute("src", dataSrc);
+        }
+      });
+
+      modal.addEventListener("hidden.bs.modal", () => {
+        if (iframe) {
+          iframe.setAttribute("src", "");
+        }
       });
     });
 

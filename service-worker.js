@@ -26,7 +26,6 @@ const urlsToCache = [
   "/partials/header.html",
   "/partials/modal-doador.html",
   "/partials/modal-servicos.html",
-  "/partials/modal-videos.html",
   "/partials/voluntario.html",
 ];
 
@@ -64,20 +63,28 @@ self.addEventListener("activate", (event) => {
 
 // FETCH COM CACHE FIRST + ATUALIZAÇÃO EM BACKGROUND
 self.addEventListener("fetch", (event) => {
-  event.respondWith(
-    caches.match(event.request).then((response) => {
-      const fetchPromise = fetch(event.request)
-        .then((networkResponse) => {
-          return caches.open(CACHE_NAME).then((cache) => {
-            cache.put(event.request, networkResponse.clone());
-            return networkResponse;
-          });
-        })
-        .catch(() => response); // fallback se offline
+  if (event.request.method !== "GET") return;
 
-      return response || fetchPromise;
-    })
-  );
+  if (event.request.url.startsWith(self.location.origin)) {
+    event.respondWith(
+      caches.match(event.request).then((response) => {
+        const fetchPromise = fetch(event.request)
+          .then((networkResponse) => {
+            if (!networkResponse || networkResponse.type === "opaque") {
+              return networkResponse;
+            }
+
+            return caches.open(CACHE_NAME).then((cache) => {
+              cache.put(event.request, networkResponse.clone());
+              return networkResponse;
+            });
+          })
+          .catch(() => response);
+
+        return response || fetchPromise;
+      })
+    );
+  }
 });
 
 // ESCUTA MENSAGEM DO CLIENTE (para skipWaiting)
