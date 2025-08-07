@@ -1,4 +1,4 @@
-const CACHE_NAME = "lar-benjamim-v3";
+const CACHE_NAME = "lar-benjamim-v4";
 
 const urlsToCache = [
   "/",
@@ -28,21 +28,20 @@ const urlsToCache = [
   "/partials/modal-servicos.html",
   "/partials/modal-videos.html",
   "/partials/voluntario.html",
-
-  // Externos
-  "https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css",
-  "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css",
-  "https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js",
-  "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap",
 ];
 
 // INSTALAÇÃO
 self.addEventListener("install", (event) => {
   self.skipWaiting(); // força o SW a ativar imediatamente
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(urlsToCache);
-    })
+    caches
+      .open(CACHE_NAME)
+      .then((cache) => {
+        return cache.addAll(urlsToCache);
+      })
+      .catch((error) => {
+        console.error("Erro ao adicionar arquivos ao cache:", error);
+      })
   );
 });
 
