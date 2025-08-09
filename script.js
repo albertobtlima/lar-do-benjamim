@@ -103,12 +103,12 @@ if ("serviceWorker" in navigator) {
 
 // Chave pix
 function copiarPix() {
-  const chavePix = "55.943.412/0001-57"; // sua chave fixa
+  const chavePix = "55.943.412/0001-57";
 
   navigator.clipboard
     .writeText(chavePix)
     .then(() => {
-      alert("Chave PIX copiada para a área de transferência!");
+      alert("Chave PIX copiada!");
     })
     .catch((err) => {
       console.error("Erro ao copiar PIX: ", err);
