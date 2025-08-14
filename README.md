@@ -1,18 +1,31 @@
 # Site Lar do Benjamim
 
+[![Figma – Protótipo Disponível](https://img.shields.io/badge/Figma–Prot%C3%B3tipo%20Dispon%C3%ADvel-blueviolet?style=for-the-badge&logo=figma)](https://www.figma.com/design/t7vVJirwvWAEDmVuj0Mfy4/Prot%C3%B3tipo-Lar-do-Benjamim?node-id=444-18&m=dev&t=euT6FYAvOpqtBGyi-1)
+
 Este repositório contém o código-fonte do site institucional do **Lar do Benjamim**,
 uma organização sem fins lucrativos dedicada ao acolhimento e cuidado de crianças
 com transtornos do neurodesenvolvimento.
 
 ## Acesse o site
 
-[lar-do-benjamim.vercel.app](https://lar-do-benjamim.vercel.app/)
+🌐 **Domínio oficial:** [lardobenjamim.com.br](https://lardobenjamim.com.br) _(em hospedagem na HostGator)_  
+🌐 **Versão atual em deploy de testes:** [lar-do-benjamim.vercel.app](https://lar-do-benjamim.vercel.app/)
 
 ## Objetivo
 
 O site foi desenvolvido com o propósito de apresentar a missão da ONG, promover o voluntariado,
 incentivar doações e facilitar o contato com a equipe responsável.
 A proposta visual busca transmitir acolhimento, leveza e confiança.
+
+## Protótipo no Figma
+
+Antes de iniciar o desenvolvimento, criamos protótipos no [Figma](https://www.figma.com/design/t7vVJirwvWAEDmVuj0Mfy4/Prot%C3%B3tipo-Lar-do-Benjamim?node-id=444-18&m=dev&t=euT6FYAvOpqtBGyi-1) para garantir uma boa experiência do usuário e alinhar o design final.  
+O trabalho incluiu:
+
+- **Protótipo de baixa fidelidade:** definição da estrutura e organização das seções.
+- **Protótipo de alta fidelidade:** aplicação da identidade visual, cores, tipografia e imagens finais.
+
+🔗 **Acesse o protótipo no Figma:** [https://www.figma.com/design/t7vVJirwvWAEDmVuj0Mfy4/Prot%C3%B3tipo-Lar-do-Benjamim?node-id=444-18&m=dev&t=euT6FYAvOpqtBGyi-1](https://www.figma.com/design/t7vVJirwvWAEDmVuj0Mfy4/Prot%C3%B3tipo-Lar-do-Benjamim?node-id=444-18&m=dev&t=euT6FYAvOpqtBGyi-1)
 
 ## Tecnologias Utilizadas
 
@@ -85,8 +98,10 @@ O site está configurado como um PWA, oferecendo:
 
 ## Informações Importantes
 
-O projeto não tem fins comerciais e é voltado para fins sociais e educativos. Todos os conteúdos,
-imagens e informações estão alinhados com a proposta da ONG Lar do Benjamim.
+O projeto não tem fins comerciais e é voltado para fins sociais e educativos.  
+Todos os conteúdos, imagens e informações estão alinhados com a proposta da ONG Lar do Benjamim.
+
+O site será hospedado na **HostGator** com o domínio oficial **lardobenjamim.com.br**.
 
 ---
 
