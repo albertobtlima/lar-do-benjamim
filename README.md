@@ -1,6 +1,5 @@
 # Site Lar do Benjamim
 
-[![Figma – Protótipo Disponível](https://img.shields.io/badge/Figma–Prot%C3%B3tipo%20Dispon%C3%ADvel-blueviolet?style=for-the-badge&logo=figma)](https://www.figma.com/design/t7vVJirwvWAEDmVuj0Mfy4/Prot%C3%B3tipo-Lar-do-Benjamim?node-id=444-18&m=dev&t=euT6FYAvOpqtBGyi-1)
 
 Este repositório contém o código-fonte do site institucional do **Lar do Benjamim**,
 uma organização sem fins lucrativos dedicada ao acolhimento e cuidado de crianças
@@ -19,13 +18,13 @@ A proposta visual busca transmitir acolhimento, leveza e confiança.
 
 ## Protótipo no Figma
 
-Antes de iniciar o desenvolvimento, criamos protótipos no [Figma](https://www.figma.com/design/t7vVJirwvWAEDmVuj0Mfy4/Prot%C3%B3tipo-Lar-do-Benjamim?node-id=444-18&m=dev&t=euT6FYAvOpqtBGyi-1) para garantir uma boa experiência do usuário e alinhar o design final.  
+Antes de iniciar o desenvolvimento, criamos protótipos no **Figma** para garantir uma boa experiência do usuário e alinhar o design final.  
 O trabalho incluiu:
 
 - **Protótipo de baixa fidelidade:** definição da estrutura e organização das seções.
 - **Protótipo de alta fidelidade:** aplicação da identidade visual, cores, tipografia e imagens finais.
 
-🔗 **Acesse o protótipo no Figma:** [https://www.figma.com/design/t7vVJirwvWAEDmVuj0Mfy4/Prot%C3%B3tipo-Lar-do-Benjamim?node-id=444-18&m=dev&t=euT6FYAvOpqtBGyi-1](https://www.figma.com/design/t7vVJirwvWAEDmVuj0Mfy4/Prot%C3%B3tipo-Lar-do-Benjamim?node-id=444-18&m=dev&t=euT6FYAvOpqtBGyi-1)
+🔗 **Acesse o protótipo:** [![Figma – Protótipo Disponível](https://img.shields.io/badge/Figma–Prot%C3%B3tipo%20Dispon%C3%ADvel-blueviolet?style=for-the-badge&logo=figma)](https://www.figma.com/design/t7vVJirwvWAEDmVuj0Mfy4/Prot%C3%B3tipo-Lar-do-Benjamim?node-id=444-18&m=dev&t=euT6FYAvOpqtBGyi-1)
 
 ## Tecnologias Utilizadas
 
