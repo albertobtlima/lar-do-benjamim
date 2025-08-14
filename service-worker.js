@@ -31,7 +31,7 @@ const urlsToCache = [
 
 // INSTALAÇÃO
 self.addEventListener("install", (event) => {
-  self.skipWaiting(); // força o SW a ativar imediatamente
+  self.skipWaiting();
   event.waitUntil(
     caches
       .open(CACHE_NAME)
@@ -58,7 +58,7 @@ self.addEventListener("activate", (event) => {
       )
     )
   );
-  return self.clients.claim(); // Assume controle das abas abertas
+  return self.clients.claim();
 });
 
 // FETCH COM CACHE FIRST + ATUALIZAÇÃO EM BACKGROUND
