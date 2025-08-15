@@ -73,10 +73,11 @@ lar-do-benjamim/
 ├── css/
 │   ├── style.css
 │   └── style.min.css
+├── js/
+│   ├── script.js
+│   └── script.min.js
 ├── manifest.json
 ├── service-worker.js
-├── script.js
-├── script.min.js
 └── README.md
 ```
 
