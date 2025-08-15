@@ -1,3 +1,4 @@
+/* Variáveis */
 :root {
   --azul: #b6d8ed;
   --azul-claro: #f2f9ff;
@@ -5,6 +6,9 @@
   --amarelo: #ffeb5b;
   --font-titulo: "Open Sans", sans-serif;
 }
+
+/* Reset e base */
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #000000;
@@ -14,40 +18,53 @@ body {
     rgba(0, 17, 128, 0.01)
   );
 }
+
+/* Header e navbar */
+
 .navbar-color {
   background-color: var(--azul-claro) !important;
 }
+
 .nav-item .nav-link {
   background-color: transparent;
   border-radius: 15px;
   transition: 0.3s ease;
 }
+
 .navbar-color .nav-link,
 .navbar-color .navbar-brand,
 .navbar-color .offcanvas-title {
   color: #000000 !important;
 }
+
 .nav-link:hover {
   color: #ffffff !important;
   font-weight: bold;
   background-color: var(--azul-escuro);
   border-radius: 15px;
 }
+
 .font-titulo {
   font-family: var(--font-titulo);
   color: var(--azul-escuro);
 }
+
 .navbar-toggler:focus {
   outline: none;
   box-shadow: none;
 }
+
 .navbar-nav .nav-item__doador {
   background-color: var(--amarelo);
   border-radius: 15px;
 }
+
+/* Doação */
+
 .doacao-container .doacao-texto {
   max-width: 500px;
 }
+
 .doacao-container .doacao-texto a {
   color: #ffffff;
   font-weight: bold;
@@ -56,30 +73,41 @@ body {
   border-radius: 10px;
   text-decoration: none;
 }
+
 .botao-destaque:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+
+/* Cards */
+
 .clickable-card {
   margin-bottom: 1.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .clickable-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+
 .card[data-bs-toggle="modal"] {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
+
 .card[data-bs-toggle="modal"]:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+
 .card-titulo {
   color: var(--azul-escuro);
 }
+
+/* Depoimentos */
+
 .video-wrapper {
   aspect-ratio: 16 / 9;
   width: 100%;
@@ -87,47 +115,66 @@ body {
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
+
 .video-wrapper iframe {
   width: 100%;
   height: 100%;
   border: none;
   display: block;
 }
+
 .video-col {
   margin-bottom: 2rem;
 }
+
 .card-img {
   max-width: 100%;
   height: auto;
   border-radius: 1.25rem;
 }
+
 .card-videos {
   background-color: transparent !important;
   border: none;
 }
+
+/* Voluntario */
+
 .container-section img {
   max-width: 100%;
   height: auto;
   border-radius: 12px;
 }
+
+/* Footer */
+
 footer {
-  background-image: url("./assets/imagens/footer-bg.webp");
+  background-image: url("../assets/imagens/footer-bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 footer a {
   text-decoration: none;
 }
+
 section a i:hover {
   color: var(--azul-escuro);
 }
+
+/* Contato */
+
 ul li a.btn {
   color: #000000;
   transition: color 0.3s ease;
 }
+
 ul li a.btn:hover {
   color: var(--roxo-escuro) !important;
 }
+
+/* Saiba mais */
+
 .saiba-mais-botao {
   display: inline-block;
   padding: 0.3rem 0.75rem;
@@ -139,16 +186,21 @@ ul li a.btn:hover {
   text-align: center;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
+
 .saiba-mais-botao:hover {
   background-color: var(--azul-escuro);
   color: white;
 }
+
+/* Botão hamburger */
+
 .custom-toggler {
   border: none;
   padding: 0.25rem;
   position: relative;
   z-index: 1031;
 }
+
 .toggler-icon {
   display: block;
   width: 24px;
@@ -157,29 +209,39 @@ ul li a.btn:hover {
   background-color: #333;
   transition: all 0.3s ease;
 }
+
 .custom-toggler.collapsed .top-bar {
   transform: rotate(0deg) translateY(0);
 }
+
 .custom-toggler:not(.collapsed) .top-bar {
   transform: rotate(45deg) translateY(9px);
 }
+
 .custom-toggler.collapsed .middle-bar {
   opacity: 1;
 }
+
 .custom-toggler:not(.collapsed) .middle-bar {
   opacity: 0;
 }
+
 .custom-toggler.collapsed .bottom-bar {
   transform: rotate(0deg) translateY(0);
 }
+
 .custom-toggler:not(.collapsed) .bottom-bar {
   transform: rotate(-45deg) translateY(-9px);
 }
+
+/* Media query */
+
 @media (min-width: 992px) {
   .texto-grande-desktop {
     font-size: 1.25rem;
   }
 }
+
 @media (min-width: 768px) {
   .video-col:not(:last-child) {
     padding-right: 1rem;
@@ -188,6 +250,7 @@ ul li a.btn:hover {
     padding-left: 1rem;
   }
 }
+
 @media (max-width: 767.98px) {
   footer section.container .row {
     justify-content: center !important;
@@ -215,6 +278,7 @@ ul li a.btn:hover {
     width: auto;
   }
 }
+
 @media (max-width: 991.98px) {
   .navbar-nav .nav-link {
     display: inline-block;
@@ -223,18 +287,22 @@ ul li a.btn:hover {
     padding-right: 0.75rem;
     margin-bottom: 0.25rem;
   }
+
   .nav-link:hover {
     background-color: var(--azul-escuro);
     border-radius: 15px;
     color: #fff !important;
   }
+
   .navbar-nav .nav-item__doador {
     display: flex;
     justify-content: center;
   }
+
   .navbar-nav .nav-item__doador .nav-link {
     display: inline-block;
     width: auto;
+
     text-align: center;
   }
 }
