@@ -70,8 +70,9 @@ lar-do-benjamim/
 ├── public/
 │   ├── robots.txt
 │   └── sitemap.xml
-├── style.css
-├── style.min.css
+├── css/
+│   ├── style.css
+│   └── style.min.css
 ├── manifest.json
 ├── service-worker.js
 ├── script.js
