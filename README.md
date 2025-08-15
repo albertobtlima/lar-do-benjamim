@@ -1,6 +1,5 @@
 # Site Lar do Benjamim
 
-
 Este repositório contém o código-fonte do site institucional do **Lar do Benjamim**,
 uma organização sem fins lucrativos dedicada ao acolhimento e cuidado de crianças
 com transtornos do neurodesenvolvimento.
@@ -15,6 +14,8 @@ com transtornos do neurodesenvolvimento.
 O site foi desenvolvido com o propósito de apresentar a missão da ONG, promover o voluntariado,
 incentivar doações e facilitar o contato com a equipe responsável.
 A proposta visual busca transmitir acolhimento, leveza e confiança.
+
+Desenvolvido com **HTML, CSS, JavaScript** e **Bootstrap**, com foco em **acessibilidade**, **responsividade** e **facilidade de manutenção**.
 
 ## Protótipo no Figma
 
@@ -70,10 +71,26 @@ lar-do-benjamim/
 │   ├── robots.txt
 │   └── sitemap.xml
 ├── style.css
+├── style.min.css
 ├── manifest.json
 ├── service-worker.js
 ├── script.js
+├── script.min.js
 └── README.md
+```
+
+---
+
+## 🚀 Preparação para Produção
+
+Antes de enviar para a hospedagem, utilize os arquivos **minificados**:
+
+```html
+<!-- CSS -->
+<link rel="stylesheet" href="css/style.min.css" />
+
+<!-- JavaScript -->
+<script src="js/script.min.js"></script>
 ```
 
 ## Funcionalidades
