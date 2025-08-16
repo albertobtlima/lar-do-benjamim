@@ -1,19 +1,17 @@
-const CACHE_NAME = "lar-benjamim-v4";
+const CACHE_NAME = "lar-benjamim-v5";
 
 const urlsToCache = [
   "/",
   "/index.html",
-  "/style.css",
-  "/script.js",
+  "/css/style.min.css",
+  "/js/script.min.js",
   "/manifest.json",
 
-  // Ícones PWA e imagens
+  // Ícones PWA
   "/assets/icons/icon-192.png",
   "/assets/icons/icon-512.png",
-  "/assets/imagens/img-lar-benjamim.png",
-  "/assets/imagens/logo-uni.png",
 
-  // Partials HTML
+  // Partials
   "/partials/cards-contatos.html",
   "/partials/cards-depoimentos.html",
   "/partials/cards-doador.html",
@@ -26,7 +24,20 @@ const urlsToCache = [
   "/partials/header.html",
   "/partials/modal-doador.html",
   "/partials/modal-servicos.html",
+  "/partials/modal-videos.html",
   "/partials/voluntario.html",
+
+  // Paginas
+  "/pages/contato.html",
+  "/pages/doador.html",
+  "/pages/equipe.html",
+  "/pages/sobre.html",
+
+  // Externos
+  "https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css",
+  "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css",
+  "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap",
+  "https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js",
 ];
 
 // INSTALAÇÃO
@@ -70,8 +81,8 @@ self.addEventListener("fetch", (event) => {
       caches.match(event.request).then((response) => {
         const fetchPromise = fetch(event.request)
           .then((networkResponse) => {
-            if (!networkResponse || networkResponse.type === "opaque") {
-              return networkResponse;
+            if (!networkResponse || networkResponse.status !== 200) {
+              return response;
             }
 
             return caches.open(CACHE_NAME).then((cache) => {
