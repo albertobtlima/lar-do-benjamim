@@ -3,8 +3,8 @@ const CACHE_NAME = "lar-benjamim-v6";
 const urlsToCache = [
   "/",
   "/index.html",
-  "/css/style.min.css",
-  "/js/script.min.js",
+  "/css/style.css",
+  "/js/script.js",
   "/manifest.json",
 
   // Ícones PWA
